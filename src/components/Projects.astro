@@ -1,0 +1,53 @@
+---
+import ProjectItem from "./ProjectItem.astro";
+
+const PROJECTS = [
+  {
+    name: "PayOps",
+    image: "/projects/payops.png",
+    description:
+      "Sistema pequeño para la administración de subscripciones de tu negocio. Cuenta con envío de emails de confirmaciones de pago, cancelaciones y funciones para realizar avisos que le sean de interes a tus clientes.",
+    link: "https://payops-landing.vercel.app/",
+    technologies: [
+      "NextJs",
+      "React",
+      "Tailwind",
+      "Electron",
+      "Prisma",
+      "Sql",
+      "ExpressJs",
+    ],
+  },
+  {
+    name: "Ignea Creativos",
+    image: "/projects/ignea-page.png",
+    description:
+      "Landing Page para agencia de Marketing llamada Ignea Creativos. Cumple como propósito anunciar sobre sus servicios y planes.",
+    link: "https://igneacreativo.com/",
+    technologies: ["HTML", "CSS", "Javascript"],
+  },
+  {
+    name: "Howler",
+    image: "/projects/howler.png",
+    description:
+      "Clon de la red social X (antes twitter) con funcionalidades básicas de la misma. Proyecto escolar desarrollado con el fin de aprender nuevas tecnologías.",
+    link: "",
+    technologies: [
+      "NextJs",
+      "React",
+      "Tailwind",
+      "NextAuth",
+      "MongoDb",
+      "Mongoose",
+      "ExpressJs",
+    ],
+  },
+];
+---
+
+<section class="mt-44" id="projects">
+  <h2 class="mb-6 text-3xl font-semibold text-white">Proyectos</h2>
+  <div class="flex gap-8 justify-center items-start mt-10">
+    {PROJECTS.map((project) => <ProjectItem {...project} />)}
+  </div>
+</section>

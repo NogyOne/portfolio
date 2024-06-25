@@ -1,0 +1,32 @@
+---
+import gitHubIcon from "../../public/icons/github-icon.svg?raw";
+import linkedinIcon from "../../public/icons/linkedin-icon.svg?raw";
+import mailIcon from "../../public/icons/mail-icon.svg?raw";
+import Icon from "../components/Icon.astro";
+import Badge from "../components/Badge.astro";
+
+const ICONS = [
+  {
+    icon: gitHubIcon,
+    ref: "https://github.com/NogyOne",
+  },
+  {
+    icon: linkedinIcon,
+    ref: "https://www.linkedin.com/in/germ%C3%A1n-g%C3%B3mez-l%C3%B3pez-6a2462268/",
+  },
+  {
+    icon: mailIcon,
+    ref: "germangl1205@gmail.com",
+  },
+];
+---
+
+<div class="flex gap-4 items-center justify-left text-zinc-400">
+  {
+    ICONS.map((icon) => (
+      <Icon ref={icon.ref}>
+        <Fragment set:html={icon.icon} />
+      </Icon>
+    ))
+  }
+</div>

@@ -1,0 +1,50 @@
+---
+import Badge from "../components/Badge.astro";
+import SocialIcons from "../components/SocialIcons.astro";
+---
+
+<article class="flex items-center justify-center gap-20 h-[100vh]" id="home">
+  <div class="text-left">
+    <h1 class="text-4xl">Bienvenido, mi nombre es</h1>
+    <p class="text-[#279EFF] text-6xl font-bold my-2">Germán Gómez</p>
+    <h2 class="text-4xl">Ingeniero de Software</h2>
+    <article class="flex mt-10 gap-20 justify-between items-center">
+      <SocialIcons />
+      <div>
+        <Badge />
+      </div>
+    </article>
+  </div>
+
+  <div>
+    <img src="/avatar.jpeg" alt="avatar" class="rounded-full w-48" />
+  </div>
+
+  <!-- <style>
+    .typewritter {
+      width: 100%;
+      border-right: 5px solid;
+      overflow: hidden;
+      white-space: nowrap;
+      letter-spacing: 6px;
+      animation:
+        typing 1s steps(12),
+        cursor 0.4s step-end infinite alternate;
+    }
+
+    @keyframes cursor {
+      50% {
+        border-color: transparent;
+      }
+    }
+
+    @keyframes typing {
+      from {
+        width: 0;
+      }
+      to {
+        width: 100%;
+      }
+    }
+  </style> -->
+</article>

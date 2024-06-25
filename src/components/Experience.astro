@@ -1,0 +1,25 @@
+---
+import ExperienceItem from "./ExperienceItem.astro";
+
+const EXPERIENCE = [
+  {
+    position: "Software Engineering Intern",
+    company: "Emcorsoft",
+    period: "01/2024 - 06/2024",
+    desc: "Implementé nuevas funciones en sistemas existentes utilizando C# (.Net y Blazor), HTML, CSS y Telerik, participé en revisiones de diseño, y colaboré eficazmente con el equipo manteniendo un fuerte sentido de responsabilidad individual.",
+  },
+  {
+    position: "Front end Developer",
+    company: "Gobierno de México",
+    period: "05/2023 - 12/2023",
+    desc: "Desarrollé y di mantenimiento a páginas web orientadas al usuario utilizando vanilla JavaScript, TailwindCSS y componentes web, creando diseños responsivos personalizados, colaborando con desarrolladores back-end para integrar elementos de la interfaz de usuario, y participando en reuniones diarias de scrum con el equipo de desarrollo.",
+  },
+];
+---
+
+<section class="mt-44" id="experience">
+  <h2 class="mb-6 text-3xl font-semibold gap-x-3 text-white">Experiencia</h2>
+  <ol class="relative border-l-2 border-gray-100">
+    {EXPERIENCE.map((item) => <ExperienceItem {...item} />)}
+  </ol>
+</section>

@@ -7,11 +7,15 @@ import SocialIcons from "../components/SocialIcons.astro";
   class="flex flex-col items-center md:flex-row justify-evenly h-[100vh] w-full scroll-m-20 mx-auto container lg:max-w-4xl md:justify-between"
   id="home"
 >
-  <div class="text-left">
+  <div class="text-center md:text-left">
     <h1 class="text-4xl">Bienvenido, mi nombre es</h1>
-    <p class="text-[#279EFF] text-6xl font-bold my-2">Germán Gómez</p>
+    <p class="text-[#279EFF] text-5xl font-bold my-2 md:text-6xl">
+      Germán Gómez
+    </p>
     <h2 class="text-4xl">Ingeniero de Software</h2>
-    <article class="flex mt-10 gap-20 justify-between items-center">
+    <article
+      class="flex mt-10 gap-10 justify-center items-center md:justify-between md:gap-20"
+    >
       <SocialIcons />
       <div>
         <Badge />
@@ -22,32 +26,4 @@ import SocialIcons from "../components/SocialIcons.astro";
   <div>
     <img src="/avatar.jpeg" alt="avatar" class="rounded-full w-48" />
   </div>
-
-  <!-- <style>
-    .typewritter {
-      width: 100%;
-      border-right: 5px solid;
-      overflow: hidden;
-      white-space: nowrap;
-      letter-spacing: 6px;
-      animation:
-        typing 1s steps(12),
-        cursor 0.4s step-end infinite alternate;
-    }
-
-    @keyframes cursor {
-      50% {
-        border-color: transparent;
-      }
-    }
-
-    @keyframes typing {
-      from {
-        width: 0;
-      }
-      to {
-        width: 100%;
-      }
-    }
-  </style> -->
 </article>

@@ -6,17 +6,18 @@ const { position, company, period, desc } = Astro.props;
   <li class="mb-10 ms-4">
     <div class="absolute w-4 h-4 bg-[#279EFF] rounded-full mt-1.5 -start-2">
     </div>
-    <div class="flex justify-between">
+    <div
+      class="flex flex-col md:flex-row justify-between items-start gap-4 md:gap-20"
+    >
       <div>
         <h3 class="text-lg font-semibold text-[#279EFF] w-full">
           {position}
         </h3>
-        <p class="text-base font- text-white">{company}</p>
+        <p class="text-base font-normal text-white">{company}</p>
         <time class="text-sm font-normal leading-none text-gray-500"
           >{period}</time
         >
       </div>
-
       <p class="mb-4 text-base font-light text-white text-pretty max-w-lg">
         {desc}
       </p>

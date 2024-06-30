@@ -5,7 +5,7 @@ export default function LanguageSelector() {
   const [dropVisible, setDropVisible] = useState(false);
   const languages = [
     { name: "English", href: "/en" },
-    { name: "Español", href: "/es" },
+    { name: "Español", href: "/" },
   ];
 
   const toggleDropdown = () => {

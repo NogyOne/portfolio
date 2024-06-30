@@ -1,17 +1,18 @@
 ---
-interface Props {
-  title: string;
-}
+import Header from "../components/Header.astro";
 
 const { title } = Astro.props;
-import Header from "../components/Header.astro";
+const { currentLocale } = Astro;
 ---
 
 <!doctype html>
-<html lang="en">
+<html lang={currentLocale}>
   <head>
     <meta charset="UTF-8" />
-    <meta name="description" content="Astro description" />
+    <meta
+      name="description"
+      content="Portfolio de proyectos personales de German G. Ingeniero de Software / Desarrollador Junior"
+    />
     <meta name="viewport" content="width=device-width" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="generator" content={Astro.generator} />

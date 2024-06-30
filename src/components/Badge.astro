@@ -1,5 +1,8 @@
 ---
+import { getLangFromUrl, useTranslations } from "../i18n/utils";
 
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
 ---
 
 <div class="flex items-center">
@@ -10,7 +13,7 @@
     <div
       class="inline-flex items-center justify-center w-full px-3 py-1 text-sm text-[#279EFF] bg-green-100 rounded-full dark:bg-gray-800 dark:text-white/80 backdrop-blur-3xl whitespace-nowrap cursor-default"
     >
-      Disponible para trabajar
+      {t("home.badge")}
     </div>
   </span>
 </div>

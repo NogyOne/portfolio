@@ -1,12 +1,15 @@
 ---
 import ProjectItem from "./ProjectItem.astro";
+import { getLangFromUrl, useTranslations } from "../i18n/utils";
+
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
 
 const PROJECTS = [
   {
     name: "PayOps",
     image: "/projects/payops.png",
-    description:
-      "Sistema pequeño para la administración de subscripciones de tu negocio. Cuenta con envío de emails de confirmaciones de pago, cancelaciones y funciones para realizar avisos que le sean de interes a tus clientes.",
+    description: t("proyect.payops").desc,
     link: "https://payops-landing.vercel.app/",
     technologies: [
       "NextJs",
@@ -21,16 +24,14 @@ const PROJECTS = [
   {
     name: "Ignea Creativos",
     image: "/projects/ignea-page.png",
-    description:
-      "Landing Page para agencia de Marketing llamada Ignea Creativos. Cumple como propósito anunciar sobre sus servicios y planes.",
+    description: t("proyect.ignea").desc,
     link: "https://igneacreativo.com/",
     technologies: ["HTML", "CSS", "Javascript"],
   },
   {
     name: "Howler",
     image: "/projects/howler.png",
-    description:
-      "Clon de la red social X (antes twitter) con funcionalidades básicas de la misma. Proyecto escolar desarrollado con el fin de aprender nuevas tecnologías.",
+    description: t("proyect.howler").desc,
     link: "",
     technologies: [
       "NextJs",
@@ -46,7 +47,7 @@ const PROJECTS = [
 ---
 
 <section id="projects">
-  <h2 class="mb-6 text-3xl font-semibold text-white">Proyectos</h2>
+  <h2 class="mb-6 text-3xl font-semibold text-white">{t("projects")}</h2>
   <div
     class="flex flex-col md:flex-row gap-8 md:gap-4 justify-center items-center mt-10"
   >

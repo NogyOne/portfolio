@@ -1,10 +1,14 @@
 ---
 import SocialIcons from "../components/SocialIcons.astro";
+import { getLangFromUrl, useTranslations } from "../i18n/utils";
+
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
 ---
 
 <footer class="mt-44 pb-6 flex justify-between items-center">
   <div class="text-gray-300 font-semibold text-sm">
-    <p>Contacto</p>
+    <p>{t("footer.contact")}</p>
     <p>germangl1205@gmail.com</p>
   </div>
   <SocialIcons />

@@ -1,6 +1,10 @@
 ---
 import Badge from "../components/Badge.astro";
 import SocialIcons from "../components/SocialIcons.astro";
+import { getLangFromUrl, useTranslations } from "../i18n/utils";
+
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
 ---
 
 <article
@@ -8,11 +12,11 @@ import SocialIcons from "../components/SocialIcons.astro";
   id="home"
 >
   <div class="text-center md:text-left">
-    <h1 class="text-4xl">Bienvenido, mi nombre es</h1>
+    <h1 class="text-4xl">{t("home.welcome")}</h1>
     <p class="text-[#279EFF] text-5xl font-bold my-2 md:text-6xl">
-      Germán Gómez
+      {t("home.name")}
     </p>
-    <h2 class="text-4xl">Ingeniero de Software</h2>
+    <h2 class="text-4xl">{t("home.major")}</h2>
     <article
       class="flex mt-10 gap-10 justify-center items-center md:justify-between md:gap-20"
     >

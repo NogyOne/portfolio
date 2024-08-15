@@ -36,6 +36,10 @@ export const languages = {
             'name': 'Howler',
             'desc': 'Clon de la red social X (antes twitter) con funcionalidades básicas de la misma. Proyecto escolar desarrollado con el fin de aprender nuevas tecnologías.'
         },
+        'proyect.blackflamingo': {
+            'name': 'BlackFlamingo',
+            'desc': 'Landing Page para óptica corporativa llamada Blackflamingo, el cual tiene como propósito anunciar sobre sus servicios y productos para corporativos.'
+        },
 
         //ABOUT ME
         'aboutme': {
@@ -72,10 +76,14 @@ export const languages = {
             'desc': 'Small system for managing subscriptions for your business. It has sending emails for payment confirmations, cancellations and functions to make notices that are of interest to your clients.'
         },
         'proyect.ignea': {
-            'desc': 'Landing Page for Marketing agency called Ignea Creativos. Its purpose is to announce about its services and plans.'
+            'desc': 'Landing Page for Marketing agency called Ignea Creativos. Its purpose is to promote its services and plans.'
         },
         'proyect.howler': {
             'desc': 'Clone of the social network X (formerly Twitter) with its basic functionalities. School project developed in order to learn new technologies.'
+        },
+        'proyect.blackflamingo': {
+            'name': 'BlackFlamingo',
+            'desc': 'Landing Page for corporate optics called Blackflamingo. Its purpose is to promote its services and products for companies.'
         },
 
          //ABOUT ME

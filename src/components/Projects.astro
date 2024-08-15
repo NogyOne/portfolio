@@ -7,6 +7,13 @@ const t = useTranslations(lang);
 
 const PROJECTS = [
   {
+    name: "BlackFlamingo",
+    image: "/projects/blackflamingo.webp",
+    description: t("proyect.blackflamingo").desc,
+    link: "https://blackflamingo.mx/",
+    technologies: ["NextJs", "React", "Tailwind"],
+  },
+  {
     name: "PayOps",
     image: "/projects/payops.png",
     description: t("proyect.payops").desc,
@@ -49,7 +56,7 @@ const PROJECTS = [
 <section id="projects">
   <h2 class="mb-6 text-3xl font-semibold text-white">{t("projects")}</h2>
   <div
-    class="flex flex-col md:flex-row gap-8 md:gap-4 justify-center items-center mt-10"
+    class="grid lg:grid-cols-3 grid-cols-2 gap-8 md:gap-4 justify-center items-center mt-10"
   >
     {PROJECTS.map((project) => <ProjectItem {...project} />)}
   </div>

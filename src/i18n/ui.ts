@@ -22,6 +22,10 @@ export const languages = {
             'position': 'Front end Developer',
             'desc':'Desarrollé y di mantenimiento a páginas web orientadas al usuario utilizando vanilla JavaScript, TailwindCSS y componentes web, creando diseños responsivos personalizados, colaborando con desarrolladores back-end para integrar elementos de la interfaz de usuario, y participando en reuniones diarias de scrum con el equipo de desarrollo.'
         },
+        'experience.freelancer': {
+            'position': 'Freelancer Developer - Full Stack web developer',
+            'desc':'Desarrollé sitios y aplicaciones web para pequeñas empresas, implementando diseños personalizados y funcionalidades específicas para cada cliente, utilizando tecnologías como Astro, NextJs, React, MongoDB, Supabase, entre otras.'
+        },
 
         //PROJECTS
         'proyect.payops': {
@@ -69,6 +73,9 @@ export const languages = {
         },
         'experience.gob': {
             'desc':'Developed and maintained user-facing websites using vanilla JavaScript, TailwindCSS, and web components, creating custom responsive layouts, collaborating with back-end developers to integrate UI elements, and participating in daily scrum meetings with the development team. development.'
+        },
+        'experience.freelancer': {
+            'desc':'Developed websites and web applications for small businesses, implementing custom designs and specific functionalities for each client, using technologies such as Astro, NextJs, React, MongoDB, Supabase, among others.'
         },
 
         //PROJECTS

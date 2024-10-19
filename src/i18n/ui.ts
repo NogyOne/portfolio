@@ -44,6 +44,10 @@ export const languages = {
             'name': 'BlackFlamingo',
             'desc': 'Landing Page para óptica corporativa llamada Blackflamingo, el cual tiene como propósito anunciar sobre sus servicios y productos para corporativos.'
         },
+        'proyect.rosascaps': {
+            'name': 'RosasCaps',
+            'desc': 'Plataforma ecommerce para la venta de gorras. Cuenta con un carrito de compras, sistema de pagos y un panel de administración para el control de productos y ventas.'
+        },
 
         //ABOUT ME
         'aboutme': {
@@ -91,6 +95,10 @@ export const languages = {
         'proyect.blackflamingo': {
             'name': 'BlackFlamingo',
             'desc': 'Landing Page for corporate optics called Blackflamingo. Its purpose is to promote its services and products for companies.'
+        },
+        'proyect.rosascaps': {
+            'name': 'RosasCaps',
+            'desc': 'Ecommerce platform for selling caps. It has a shopping cart, payment system, and an administration panel for product and sales control.'
         },
 
          //ABOUT ME

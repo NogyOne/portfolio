@@ -26,6 +26,10 @@ export const languages = {
             'position': 'Freelancer Developer - Full Stack web developer',
             'desc':'Desarrollé sitios y aplicaciones web para pequeñas empresas, implementando diseños personalizados y funcionalidades específicas para cada cliente, utilizando tecnologías como Astro, NextJs, React, MongoDB, Supabase, entre otras.'
         },
+        'experience.store_intelligence': {
+            'position': "Web Developer",
+            'desc':'Desarrollé nuevas funcionalidades en proyectos existentes utilizando ASP .NET y .NET Framework. Llevé a cabo el desarrollo de proyectos completos desde su inicio hasta su finalización, utilizando Python y Selenium. Además, desarrollé y brindé soporte en flujos de extracción para el área de operaciones, empleando JavaScript.'
+        },
 
         //PROJECTS
         'proyect.payops': {
@@ -38,15 +42,19 @@ export const languages = {
         },
         'proyect.howler': {
             'name': 'Howler',
-            'desc': 'Clon de la red social X (antes twitter) con funcionalidades básicas de la misma. Proyecto escolar desarrollado con el fin de aprender nuevas tecnologías.'
+            'desc': 'Clon de la red social X (antes twitter) con funcionalidades básicas de la misma. Proyecto escolar desarrollado con el fin de aprender nuevas tecnologías. Desarrollado en NextJs, React TailwindCSS, NodeJs y MongoDb'
         },
         'proyect.blackflamingo': {
             'name': 'BlackFlamingo',
-            'desc': 'Landing Page para óptica corporativa llamada Blackflamingo, el cual tiene como propósito anunciar sobre sus servicios y productos para corporativos.'
+            'desc': 'Landing Page para óptica corporativa llamada Blackflamingo, el cual tiene como propósito anunciar sobre sus servicios y productos para corporativos. Desarrollada con React y TailwindCSS'
         },
         'proyect.rosascaps': {
             'name': 'RosasCaps',
-            'desc': 'Plataforma ecommerce para la venta de gorras. Cuenta con un carrito de compras, sistema de pagos y un panel de administración para el control de productos y ventas.'
+            'desc': 'Plataforma ecommerce para la venta de gorras. Proyecto desarrollado a la medida con tecnologías como NextJs, React, TailwindCSS, Supabase y NodeJs'
+        },
+        'proyect.tiemponoble': {
+            'name': 'TiempoNoble',
+            'desc': 'Plataforma ecommerce para la venta de relojes. Desarrollada con Shopify implementando tecnologías como Liquid, HTML, CSS y JavaScript.'
         },
 
         //ABOUT ME
@@ -81,6 +89,10 @@ export const languages = {
         'experience.freelancer': {
             'desc':'Developed websites and web applications for small businesses, implementing custom designs and specific functionalities for each client, using technologies such as Astro, NextJs, React, MongoDB, Supabase, among others.'
         },
+        'experience.store_intelligence': {
+            'position': "Web Developer",
+            'desc':'Developed new features in existing projects using ASP .NET and .NET Framework. Carried out the development of complete projects from start to finish using Python and Selenium. Additionally, I developed and provided support in extraction flows for the operations area, using JavaScript.'
+        },
 
         //PROJECTS
         'proyect.payops': {
@@ -94,11 +106,15 @@ export const languages = {
         },
         'proyect.blackflamingo': {
             'name': 'BlackFlamingo',
-            'desc': 'Landing Page for corporate optics called Blackflamingo. Its purpose is to promote its services and products for companies.'
+            'desc': 'Landing Page for corporate optics called Blackflamingo, which aims to advertise its services and products for corporates. Developed with React and TailwindCSS.'
         },
         'proyect.rosascaps': {
             'name': 'RosasCaps',
-            'desc': 'Ecommerce platform for selling caps. It has a shopping cart, payment system, and an administration panel for product and sales control.'
+            'desc': 'Ecommerce platform for selling caps. Project developed from scratch with technologies such as NextJs, React, TailwindCSS, Supabase, and NodeJs.'
+        },
+        'proyect.tiemponoble': {
+            'name': 'TiempoNoble',
+            'desc': 'Ecommerce platform for selling watches. Developed with Shopify implementing technologies such as Liquid, HTML, CSS, and JavaScript.'
         },
 
          //ABOUT ME

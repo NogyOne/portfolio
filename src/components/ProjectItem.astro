@@ -1,5 +1,5 @@
 ---
-const { name, image, description, link, technologies } = Astro.props;
+const { name, image, description, link, technologies, deployed } = Astro.props;
 ---
 
 <article
@@ -15,15 +15,18 @@ const { name, image, description, link, technologies } = Astro.props;
     />
     <a href={link} target="_blank"
       ><button
-        class="w-full h-14 bg-[#2C2C3D] rounded-xl mt-1 rounded-b-2xl border-[#777777] border font-medium"
-        >Deploy🚀</button
+        disabled={deployed === false}
+        class={`w-full h-14 bg-[#2C2C3D] rounded-xl mt-1 rounded-b-2xl border-[#777777] border font-medium ${deployed === false ? "cursor-default" : "cursor-pointer"}`}
+        >{deployed === true ? "Deploy🚀" : "Not Demo Available😓"}</button
       ></a
     >
 
     <div class="flex flex-col justify-between">
       <div class="mt-4">
         <h2 class="text-center font-medium">{name}</h2>
-        <p class="p-1 pt-4 pb-4 text-sm text-pretty">{description}</p>
+        <p class="p-1 pt-4 pb-4 text-sm text-pretty leading-relaxed">
+          {description}
+        </p>
       </div>
       <!-- <div class="flex justify-start items-center flex-wrap gap-2">
         {technologies.map((item) => <p>{item}</p>)}

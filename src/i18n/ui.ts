@@ -62,9 +62,9 @@ export const languages = {
             'introduction': 'Soy Germán Gómez, vivo en México y me encanta todo lo relacionado con el desarrollo web.',
             'iam': 'Soy ',
             'title': 'Ingeniero de Software ',
-            'complement':'recién egresado, por lo cual actualmente me encuentro en busca de trabajo en alguna empresa tech.',
+            'complement':'recién egresado, por lo cual actualmente me encuentro en busca de trabajo en alguna empresa tech. Soy una persona que siempre esta en constante aprendizaje, busco aprender de lo bueno que las peronas que me rodean tienen para enseñarme y siempre busco mejorar en lo que hago.',
             'current_act': 'Actualmente me encuentro trabajando como ',
-            'in':' en coolaboración con una agencia de Marketing de mi ciudad.' 
+            'in':', pero siempre estoy en busca de nuevos retos y disponible para escuchas nuevas ofertas.' 
         },
 
         //TITLES
@@ -74,7 +74,7 @@ export const languages = {
     },
     en: {
         'home.welcome': 'Welcome, my name is',
-        'home.major': 'Software Engineering',
+        'home.major': 'Software Engineer',
         'home.badge':'Available to work',
         
         'footer.contact':'Contact',
@@ -122,9 +122,9 @@ export const languages = {
             'introduction': 'I am Germán Gómez, I live in México and I love everything related to web development',
             'iam': 'I am recently graduated',
             'title': 'Software Engineer',
-            'complement':', so I am currently looking for a job in a tech company.',
+            'complement':', so I am currently looking for a job in a tech company. I am a person who is always learning, I seek to learn from good things that the people around me have to teach me and I always seek to improve in what I do.',
             'current_act': 'I am currently working as a ',
-            'in': 'in collaboration with a Marketing agency in my city.' 
+            'in': ', but I am always looking for new challenges and available to listen to new offers.' 
         },
 
         //TITLES

@@ -62,7 +62,7 @@ export const languages = {
             'introduction': 'Soy Germán Gómez, vivo en México y me encanta todo lo relacionado con el desarrollo web.',
             'iam': 'Soy ',
             'title': 'Ingeniero de Software ',
-            'complement':'recién egresado, por lo cual actualmente me encuentro en busca de trabajo en alguna empresa tech. Soy una persona que siempre esta en constante aprendizaje, busco aprender de lo bueno que las peronas que me rodean tienen para enseñarme y siempre busco mejorar en lo que hago.',
+            'complement':'especializado en desarrollo web, soy una persona que siempre esta en constante aprendizaje, busco aprender lo bueno que las personas que me rodean tienen para enseñarme y siempre busco mejorar en lo que hago.',
             'current_act': 'Actualmente me encuentro trabajando como ',
             'in':', pero siempre estoy en busca de nuevos retos y disponible para escuchas nuevas ofertas.' 
         },

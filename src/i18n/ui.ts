@@ -56,6 +56,10 @@ export const languages = {
             'name': 'TiempoNoble',
             'desc': 'Plataforma ecommerce para la venta de relojes. Desarrollada con Shopify implementando tecnologías como Liquid, HTML, CSS y JavaScript.'
         },
+        'proyect.hominum': {
+            'name': 'Hominum',
+            'desc': 'Landing Page para un negocio que ofrece talleres de Inmersión en Hielo y Meditaciones guiadas. Desarrollada con Astro, React y TailwindCSS.'
+        },
 
         //ABOUT ME
         'aboutme': {
@@ -115,6 +119,10 @@ export const languages = {
         'proyect.tiemponoble': {
             'name': 'TiempoNoble',
             'desc': 'Ecommerce platform for selling watches. Developed with Shopify implementing technologies such as Liquid, HTML, CSS, and JavaScript.'
+        },
+        'proyect.hominum': {
+            'name': 'Hominum',
+            'desc': 'Landing Page for a business that offers Ice Immersion and Guided Meditation workshops. Developed with Astro, React, and TailwindCSS.'
         },
 
          //ABOUT ME

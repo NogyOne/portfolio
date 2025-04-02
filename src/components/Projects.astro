@@ -7,6 +7,14 @@ const t = useTranslations(lang);
 
 const PROJECTS = [
   {
+    name: "Hominum",
+    image: "/projects/hominum.png",
+    description: t("proyect.hominum").desc,
+    link: "https://hominum-landing.vercel.app/",
+    technologies: ["Astro", "React", "Tailwind"],
+    deployed: true,
+  },
+  {
     name: "Rosas Caps",
     image: "/projects/rosas-caps.png",
     description: t("proyect.rosascaps").desc,
@@ -15,18 +23,18 @@ const PROJECTS = [
     deployed: true,
   },
   {
-    name: "Tiempo Noble Relojes",
-    image: "/projects/tiempo-noble.png",
-    description: t("proyect.tiemponoble").desc,
-    link: "https://tiemponoblerelojes.com/",
-    technologies: ["NextJs", "React", "Tailwind"],
-    deployed: true,
-  },
-  {
     name: "BlackFlamingo",
     image: "/projects/blackflamingo.webp",
     description: t("proyect.blackflamingo").desc,
     link: "https://blackflamingo.mx/",
+    technologies: ["NextJs", "React", "Tailwind"],
+    deployed: true,
+  },
+  {
+    name: "Tiempo Noble Relojes",
+    image: "/projects/tiempo-noble.png",
+    description: t("proyect.tiemponoble").desc,
+    link: "https://tiemponoblerelojes.com/",
     technologies: ["NextJs", "React", "Tailwind"],
     deployed: true,
   },

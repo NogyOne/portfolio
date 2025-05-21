@@ -2,33 +2,55 @@
 const { name, image, description, link, technologies, deployed } = Astro.props;
 ---
 
-<article class="hover:-translate-y-4 transition ease-out w-full mb-4 mx-auto">
-  <div
-    class="bg-[#283564] p-2 rounded-2xl backdrop-opacity-60 h-[500px] hover:bg-[#3c4e91]"
-  >
-    <img
-      src={image}
-      alt="project-image"
-      class="rounded-xl rounded-t-2xl w-full h-[170px] object-center object-fill"
-    />
-    <a href={link} target="_blank"
-      ><button
-        disabled={deployed === false}
-        class={`w-full h-14 bg-[#2C2C3D] rounded-xl mt-2 rounded-b-2xl border-[#777777] border font-medium ${deployed === false ? "cursor-default" : "cursor-pointer"}`}
-        >{deployed === true ? "Deploy🚀" : "Not Demo Available😓"}</button
-      ></a
-    >
-
-    <div class="flex flex-col justify-between">
-      <div class="mt-10">
-        <h2 class="text-center font-medium">{name}</h2>
-        <p class="p-1 pt-4 pb-4 text-sm text-pretty leading-relaxed">
-          {description}
-        </p>
+<a
+  target="_blank"
+  href={link}
+  class="w-full mb-4 mx-auto group cursor-pointer text-xl border-purple-500 border-2 rounded-2xl"
+>
+  <div class="bg-[#283564] rounded-2xl h-[520px] flex flex-col justify-between">
+    <div>
+      <div class="group-hover:p-0 p-2 transition-all ease-out duration-200">
+        <img
+          src={image}
+          alt="project-image"
+          class="rounded-t-2xl w-full h-[190px] object-center object-fill border-white border-2 transition-all duration-300"
+        />
       </div>
-      <!-- <div class="flex justify-start items-center flex-wrap gap-2">
-        {technologies.map((item) => <p>{item}</p>)}
-      </div> -->
+      <div class="px-2">
+        <div class="flex flex-col justify-between">
+          <div class="mt-10">
+            <h2
+              class="text-center font-medium group-hover:text-[#9292F0] transition-all duration-200"
+            >
+              {name}
+            </h2>
+            <p class="text-pretty leading-relaxed text-base prose mt-4 px-2">
+              {description}
+            </p>
+          </div>
+          <!-- <a href={link} target="_blank"
+          ><button
+            disabled={deployed === false}
+            class={`w-full h-14 bg-[#2C2C3D] rounded-xl mt-2 rounded-b-2xl border-[#777777] border font-medium  ${deployed === false ? "cursor-default" : "cursor-pointer"}`}
+            >{deployed === true ? "Deploy🚀" : "Not Demo Available😓"}</button
+          ></a
+        > -->
+        </div>
+      </div>
+    </div>
+    <div
+      class="text-sm space-x-2 group-hover:bg-[#9292F0] bg-[#6a6ada] w-full rounded-b-xl py-2 px-4 transition-all duration-200 grid grid-cols-4 mt-4"
+    >
+      {technologies.map((item) => <p>#{item}</p>)}
     </div>
   </div>
-</article>
+</a>
+
+<style>
+  a {
+    transition: all 0.2s ease;
+  }
+  a:hover {
+    box-shadow: 0 0px 30px rgba(146, 146, 240, 0.7);
+  }
+</style>
